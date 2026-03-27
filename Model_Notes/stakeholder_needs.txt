@@ -1,7 +1,7 @@
-BN-1	Real-Time Weather	I want to see real-time temperature, humidity, and atmospheric pressure readings.
-BN-2	Historical Tracking	I want to track historical weather data over days and weeks.
-BN-3	Weather Alerts		I want to receive alerts when weather conditions reach certain levels I care about.
-BN-4	Multi-Device Access	I want to access the weather station data from my smartphone, tablet, or computer.
-BN-5	Data Comparison		I want to compare current weather readings with previous days or similar conditions.
-BN-6	Reliability		I want the system to be reliable and operate continuously without constant supervision.
-BN-7	Usability		I want the system to be easy to understand and interpret, even with advanced data.
+SN-1	Real-Time Weather	I want to see real-time temperature, humidity, and atmospheric pressure readings.
+SN-2	Historical Tracking	I want to track historical weather data over days and weeks.
+SN-3	Weather Alerts		I want to receive alerts when weather conditions reach certain levels I care about.
+SN-4	Multi-Device Access	I want to access the weather station data from my smartphone, tablet, or computer.
+SN-5	Data Comparison		I want to compare current weather readings with previous days or similar conditions.
+SN-6	Reliability		I want the system to be reliable and operate continuously without constant supervision.
+SN-7	Usability		I want the system to be easy to understand and interpret, even with advanced data.
