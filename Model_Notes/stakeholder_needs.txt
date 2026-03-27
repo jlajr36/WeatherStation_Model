@@ -5,3 +5,27 @@ SN-4	Multi-Device Access	I want to access the weather station data from my smart
 SN-5	Data Comparison		I want to compare current weather readings with previous days or similar conditions.
 SN-6	Reliability		I want the system to be reliable and operate continuously without constant supervision.
 SN-7	Usability		I want the system to be easy to understand and interpret, even with advanced data.
+
+1. Data Acquisition & Monitoring
+SN-1 – Real-Time Weather: See live temperature, humidity, pressure.
+SN-2 – Historical Tracking: Track data over days/weeks.
+SN-5 – Data Comparison: Compare current readings with past data.
+
+2. Alerts & Communication
+SN-3 – Weather Alerts: Receive notifications for important conditions.
+SN-4 – Multi-Device Access: Access data on smartphone, tablet, or computer.
+
+3. System Quality & Usability
+SN-6 – Reliability: Continuous operation without supervision.
+SN-7 – Usability: Easy to understand, even for advanced data.
+
+Data Acquisition & Monitoring
+Real-Time Weather
+Historical Tracking
+Data Comparison
+System Quality & Usability
+Reliability
+Usability
+Alerts & Communication
+Weather Alerts
+Multi-Device Access
