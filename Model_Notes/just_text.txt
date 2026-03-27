@@ -1,0 +1,52 @@
+MGWeek 2: Assignment 2.1: Problem Domain
+Black Box: Home Weather Station
+March 19, 2026
+1 Raspberry Pi Weather Station
+Your system of interest is a home weather station. Use the following site as a ref
+erence for your weather station. https://projects.raspberrypi.org/en/projects/build
+your-own-weather-station/1. You are free to enhance and modify your weather
+station but it must satisfy the core purpose described by the raspberrypi site.
+e.g. you can add an additional sensor, swap one sensor type for another or use
+a different communication technology.
+Figure 1: Raspberry Pi Weather Station
+In addition to the hardware and embedded software listed above your system
+must also include weather monitoring software to run a device of your choice.
+e.g. smart phone, laptop, etc.
+For measures of effectiveness include communication range (wifi) and weather
+reading archiving.
+1
+2 Problem Domain Black Box
+Black-Box perspective
+Problem domain analysis and definition from the black-box perspective is
+the first step towards specifying what the SoI shall do to fulfill the stakeholders’
+expectations. The goal of this phase is to understand how the SoI interacts with
+its environment to solve the given challenges. As the SoI is considered a black
+box, the analysis is not concerned with its internal structure and behavior. The
+analysis is performed to define the main inputs and outputs, black-box func
+tions, and quantifiable characteristics of the SoI, while operating in a variety of
+system contexts [PHD21].
+Figure 2: MagicGrid® Black Box
+Use the MagicGrid BOK as a reference.
+Tasks:
+1. MBSE Planning
+2. Stakeholder Needs
+(a) Capture information directly in the model (MG BOK Sub-Step 3)
+(b) Create 5 to 10 requirements for your Weather Station
+3. System Context
+4. Use Cases
+(a) Add item flows as object flows to scenarios (MG BOK Sub-Step 7)
+2
+5. Measures of Effectiveness
+6. Review
+Outputs:
+1. Project in TWC
+2. Table of stakeholder needs
+3. System context diagram in BDD, IBD
+4. Use cases identified in UC
+5. Scenarios defined in ACTs
+6. MoEs defined in BDD
+7. Review captured in model
+References
+[PHD21] Aurelijus Morkeviˇcius PH.D. MagicGrid® BOOK OF KNOWLEDGE.
+A Practical Guide to Systems Modeling using MagicGrid from Das
+sault Syst`emes. VITAE LITERA, 2021. isbn: 978-609-454-554-2.
