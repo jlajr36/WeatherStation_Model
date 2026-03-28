@@ -1,0 +1,241 @@
+System Context
+What is it?
+System context (or operating environment) determines an external view of the system. The system context 
+introduces all external entities that do not belong to the system but do interact with it. More than one 
+system context can be defined for a single SoI. Besides the system itself (currently considered to be a black 
+box), the collection of elements in the particular system context can include external systems (natural or 
+artificial) and users (humans, organizations) that interact with the SoI to exchange data, matter, energy, or 
+even human resources.
+In overall, this cell produces:
+•
+•
+•
+•
+Definitions of system contexts
+Participants of each system context: SoI, supposed users of the system, other systems, etc.
+Interactions between participants of each system context
+Items that are exchanged over these interactions
+Who is responsible?
+System contexts can be identified and specified by the Systems Analyst or Systems Engineer.
+How to model?
+System context diagram pictures the SoI at the center, with no details of its interior structure, surrounded 
+by all its interacting entities, such as supposed users and external systems to name a few. In the SysML 
+model, system contexts can be captured as elements of the SysML block type. All the entities can be 
+captured as SysML blocks, too. As defined by SysML, once the entity block is used in the system context 
+block, a part property typed by the former, is created for the latter.
+
+We recommend using blocks rather than actors (stick man notation) to capture even human-nature 
+entities (for example, users of the SoI) because the actor cannot be a part of the system context in 
+the SysML model.
+A SysML internal block diagram (ibd) can serve to represent the entities of the particular system context, 
+and interactions between them. Each entity is represented as a part property of the related system context 
+block.
+Interactions within the system context can be captured as connectors with one or more item flows 
+between those part properties. Data, matter, or energy are items that can flow. They can be stored in the 
+model as signals, blocks, or value types, depending on their nature, and in general are refereed as 
+exchange items.
+MagicGrid® Book of Knowledge | 35
+As you can see in the following figure, system context diagrams can be supplemented with various 
+images, so that the result could be presented to stakeholders, including even those who are incapable 
+of reading models.
+Tutorial
+•
+•
+•
+•
+•
+•
+Step 1. Organizing the model for the system context
+Step 2. Capturing system contexts
+Step 3. Creating an ibd for a system context
+Step 4. Capturing participants of the system context
+Step 5. Specifying interactions between the participants of system context
+Step 6. Adding item flows to the system context
+Step 1. Organizing the model for the system context
+Following the structure of the MagicGrid framework, system contexts and owned-by-them SysML internal 
+block diagrams, together with the elements they represent, should be stored in a separate package inside 
+the 1 Black Box package. We recommend naming the package after the cell, that is, 2 System Context.
+To organize the model for the system context
+1.
+2.
+3.
+Right-click the 1 Black Box package and select Create Element.
+In the search box, type pa (the first two letters of the element type Package) and press Enter.
+Type 2 System Context to specify the name of the new package and press Enter.
+36 | MagicGrid® Book of Knowledge
+Step 2. Capturing system contexts
+System contexts can be identified by analyzing stakeholder needs (see Chapter Stakeholder Needs). 
+Stakeholder needs of the Vehicle Climate Control Unit enable you to identify a single context: the Vehicle In 
+Use. It can be captured in your model as an element of the SysML block type.
+To create a block that captures the Vehicle In Use system context
+1.
+2.
+3.
+Right-click the 2 System Context package and select Create Element.
+In the search box, type bl (the first letters of the required element type) and press Enter.
+Type Vehicle In Use to specify the name of the new block and press Enter. The block is created and 
+represented in the Model Browser.
+It is important to understand that the SoI may operate in more than one system context. To illustrate this, 
+we need to capture one more system context. In this example, we will use the Vehicle in Maintenance (see 
+the following figure). You can create the appropriate block on your own by following the procedure above.
+The recently captured system context is not included in further analysis. It is not mentioned in the 
+stakeholder needs and has been created for demonstration purposes only. 
+MagicGrid® Book of Knowledge | 37
+Step 3. Creating an ibd for a system context
+To specify participants of the Vehicle In Use system context, you first need to create a SysML internal block 
+diagram for the block that captures that system context.
+To create an IBD for the Vehicle In Use block
+1.
+2.
+Right-click the Vehicle In Use block and select Create Diagram.
+In the search box, type ibd, the acronym of the SysML internal block diagram, and then double-press 
+Enter. The diagram is created and represented in the Model Browser under the Vehicle In Use block.
+
+The diagram is named after the block that owns it. As this name perfectly suits the diagram, 
+there is no need to change it.
+Step 4. Capturing participants of the system context
+Entities that participate in the system context can be captured in the model as the part properties of that 
+system context, where each part property is typed by the block, that captures the appropriate entity (for 
+example, the SoI, its supposed users, or some external system).
+
+Here you should remember the SysML Specification, which tells you that blocks should be used for 
+defining concepts and parts are used for specifying the usage of these concepts. Any concept, once 
+defined in your model, can be used in many system contexts. For example, the Vehicle Climate 
+Control Unit SoI defined as a block can type a part property of the Vehicle in Use system context and 
+part property of the Vehicle in Maintenance system context, meaning that it participates in both.
+Stakeholder needs indicate that the Vehicle In Use system context includes the following participants:
+•
+•
+•
+•
+Vehicle Climate Control Unit, the SoI
+Vehicle Occupant (driver or passenger), the supposed user of the SoI
+Vehicle Cabin, the closed environment that must be provided with a comfortable air temperature
+Temperature Sensor, the external system to provide an ambient temperature to the SoI
+To capture participants of the Vehicle In Use system context
+1.
+Open the ibd created in step 3 of this cell tutorial, if not yet opened.
+38 | MagicGrid® Book of Knowledge
+2.
+Make sure the Type Selection Mode is on in the diagram. Otherwise, parts created in this diagram will 
+not be typed by blocks.
+
+In this mode, when you create a part property, the tool offers you a list of blocks, from which 
+you can choose the part property type. If the necessary block does not exist yet, you can 
+simply create it by typing its name directly on the part property shape.
+3.
+4.
+Click the Part Property button on the diagram palette and then click an empty place on the diagram 
+pane. An unnamed part property is created, and the list of existing blocks to type it is offered.
+Type VCCU next to the colon (":") directly on the part property shape and press Enter. The VCCU block 
+to type the just-created part property emerges in the Model Browser.
+
+When the Type Selection Mode is enabled, typing on the part property shape always defines 
+the name of the new block. This new block types that part property, but not the name of the 
+part property. If you want to specify the name as well, type it before the colon (":") on the 
+shape. However, names are not necessary, since part properties created in this diagram can be 
+easily identified by their types. Names are useful when you want to specify more than one 
+usage of the same block (for example, the front-left, front-right, rear-left, and rear-right wheels 
+of the vehicle).
+MagicGrid® Book of Knowledge | 39
+5. Repeat steps 3 and 4 to create the rest of part properties: one typed by the Vehicle Occupant block,
+one by the Cabin block, and one by the Temperature Sensor block.
+
+Since you need to create more than one part property in succession, use the functionality of 
+the Sticky button (see the following figure), so it is not necessary to click the Part Property
+button on the palette each time you want to create a new part property. When the Sticky 
+mode is enabled, you can create as many elements of the selected type as you need. Press Esc 
+when you are finished.
+When you are finished, you have four part properties and the same number of blocks that type them in 
+your model.
+To keep your model well-organized, we recommend storing the blocks that capture users and other 
+systems in a separate package within the 2 System Context package. For this, you need to create an internal 
+package and drag the blocks to the new location in the Model Browser. Hold down the Shift key to select 
+more than one block.
+40 | MagicGrid® Book of Knowledge
+Step 5. Specifying interactions between the participants of system context
+The stakeholder needs indicate that the Vehicle Climate Control Unit interacts with all participants of the 
+Vehicle In Use system context. We need to capture this information in the model.
+Remember that interactions can be specified as connectors with one or more item flows between 
+appropriate part properties. We will start with drawing the connectors.
+To draw a connector between the :VCCU and :Vehicle Occupant part properties
+1.
+2.
+Select the :VCCU part property and click the Connector button 
+ on its smart manipulator toolbar.
+Select the :Vehicle Occupant part property. The connector is created.
+MagicGrid® Book of Knowledge | 41
+You can create other connectors using this same method. Once you have finished, your ibd should look 
+very similar to the one below.
+Step 6. Adding item flows to the system context
+To begin, we first need the items that can flow from one part property to another across the connector and 
+back. We recommend storing the elements that capture these items in a separate package (see the 
+following figure). The contents of this package will be used in the white-box analysis model, too. 
+Therefore, instead of creating the new package directly under the 2 System Context package (which is a 
+part of the black-box analysis model) create it under the 1 Problem Domain package. 
+If we assume that you have created the 3 Exchange Items package (the package number is 3 because 
+number 2 will be used for the White Box package) on your own, we can move directly to creating items that 
+can flow and assigning item flows to the connectors. One or more item flows can be assigned on a single 
+connector.
+Stakeholder needs indicate that:
+•
+•
+•
+•
+Vehicle Occupant shall be able to turn the VCCU on and off, and specify the desired temperature (see 
+SN-1.1.2, SN-1.1.6)
+VCCU shall provide a comfortable air temperature for the Vehicle Occupant sitting in the Cabin (see 
+SN-1.1.7)
+VCCU shall obtain the ambient temperature from the Temperature Sensor of the vehicle (see 
+SN-1.1.5)
+VCCU shall display status and temperature information (see SN-1.1.5)
+42 | MagicGrid® Book of Knowledge
+These statements enable you to identify the following exchange items:
+•
+•
+•
+•
+•
+•
+User Command
+Desired Temperature
+Air
+Comfortable Air
+Ambient Temperature
+Information
+Air and Comfortable Air are matter; thus, they can be captured in the model as blocks. The rest of the 
+items can be captured as signals, because they mean data.
+To capture the User Command, Desired Temperature, and Information in the model and specify them as 
+items conveyed by the item flows between the :VCCU and :Vehicle Occupant part properties
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+Right-click the 3 Exchange Items package and select Create Element.
+In the search box, type si (the first two letters of the element type Signal) and press Enter.
+Type User Command to specify the name of the new signal and press Enter.
+Drag the signal to the connector between :VCCU and :Vehicle Occupant part properties in the Vehicle In 
+Use ibd.
+In the open dialog, select From Vehicle Occupant To VCCU as the direction of the flow and click Finish. 
+A new item flow conveying the User Command signal is created and displayed on the connector.
+Repeat steps 1 to 3 to create the Desired Temperature signal.
+Drag the signal to the same connector.
+In the open dialog, select From Vehicle Occupant To VCCU as the direction of the flow and click Finish. 
+A new item flow conveying the Desired Temperature signal is created and displayed on the connector.
+Repeat steps 1 to 3 to create the Information signal.
+Drag the signal to the same connector.
+In the open dialog, click Finish. A new item flow conveying the Information signal is created and 
+displayed on the connector.
+MagicGrid® Book of Knowledge | 43
+In the same manner, you can capture the remaining exchange items and then specify item flows on other 
+connectors in the Vehicle In Use ibd. Once finished, your ibd should look very similar to the one below.
+As you can see in the figure below, system context diagrams can be supplemented with various images so 
+the result could be presented to stakeholders, including even those who are incapable of reading models. 
+For more information, see the latest documentation of the modeling tool.

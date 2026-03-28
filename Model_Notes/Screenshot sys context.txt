@@ -1,0 +1,24 @@
+This image is a **SysML Internal Block Diagram (IBD)** titled **"Weather Station In Use"**. It illustrates the functional interactions and data flows between five primary components or actors in a weather monitoring system.
+
+### **System Components (Blocks)**
+The diagram contains five distinct blocks, each represented by a yellow rectangle:
+*   **`: Weather Enviroment`**: The external source of environmental conditions.
+*   **`: Home Weather Station`**: The central processing hub of the system.
+*   **`: Data Storage`**: The component responsible for long-term data retention.
+*   **`: User Device`**: The interface (such as a smartphone or tablet) used to interact with the system.
+*   **`: User`**: The human actor interacting with the device.
+
+### **Data Flows and Interactions**
+The connections between these blocks are defined by directed arrows indicating the flow of information:
+
+1.  **Weather Data Input**: The **`: Weather Enviroment`** sends **"Sensor Data"** to the **`: Home Weather Station`**.
+2.  **Storage Operations**: There is a bidirectional relationship between the **`: Home Weather Station`** and **`: Data Storage`**.
+    *   The station sends **"Archive Weather Data"** to storage.
+    *   The station retrieves information via **"Recall Archive Data"**.
+3.  **User Interface Interaction**: There is a bidirectional relationship between the **`: Home Weather Station`** and the **`: User Device`**.
+    *   The station pushes **"Weather Data & Alerts"** to the device.
+    *   The device sends a **"User Command"** back to the station.
+4.  **Human Interaction**: The **`: User`** initiates a **"User Command"** which is sent directly to the **`: User Device`**.
+
+### **Additional Metadata**
+*   **Context Header**: The diagram is labeled at the top left as `ibd [Block] Weather Station In Use [ Weather Station In Use ]`.
