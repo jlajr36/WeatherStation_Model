@@ -1,0 +1,37 @@
+This is a **SysML/UML Activity Diagram** titled **"Provide Real-Time Weather Data"**. The diagram is organized into four vertical **swimlanes (partitions)**, each representing a different component or entity allocated to specific actions.
+
+### **Diagram Structure and Components**
+
+1.  **Swimlanes (Allocated Entities):**
+    *   **Weather Environment:** The source of raw data.
+    *   **Home Weather Station:** The central processing hub for the system.
+    *   **Data Storage:** A repository for long-term data retention.
+    *   **User Device:** The interface for the end-user (e.g., a smartphone or tablet).
+
+2.  **Visual Notation:**
+    *   **Initial Node:** A solid black circle in the "Weather Environment" lane signifies the start of the activity.
+    *   **Actions:** Rounded rectangles containing text describe specific tasks.
+    *   **Control Flows:** Solid lines with arrowheads indicate the sequential order of actions.
+    *   **Object/Information Flows:** Dashed lines with arrowheads indicate the transfer of data between entities.
+
+---
+
+### **Detailed Process Flow**
+
+#### **1. Data Generation and Initial Processing**
+*   The process begins in the **Weather Environment** at the **Initial Node**, leading to the action **"Generate Sensor Data"**.
+*   An information flow (dashed line) carries this data to the **Home Weather Station**, which executes the **"Receive Sensor Data"** action.
+*   From there, the station moves to **"Provide Weather Data & Alerts"**.
+
+#### **2. Real-Time Output and Storage**
+*   The **"Provide Weather Data & Alerts"** action has two subsequent paths:
+    *   An information flow sends data to the **User Device**, which triggers **"Display Weather Data & Alerts"**.
+    *   A control flow moves to **"Store Weather Data"** within the station.
+*   The **"Store Weather Data"** action sends an information flow to the **Data Storage** lane, triggering the **"Store Data"** action.
+
+#### **3. User Interaction and Historical Data Retrieval**
+*   The **User Device** can initiate a request via the **"Send Command"** action.
+*   This command is sent as an information flow to the **Home Weather Station**, triggering **"Receive User Command"**.
+*   Following the command receipt, the station moves to **"Provide Requested Data"**.
+*   To fulfill this, an information flow is sent from the **Data Storage** action **"Provide Historical Data"** back to the station's **"Provide Requested Data"** action.
+*   Finally, the requested data is sent via an information flow to the **User Device**, where it is handled by the action **"Display Historical / Requested Data"**.
