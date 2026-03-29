@@ -1,0 +1,6 @@
+accuracy: percentage error
+updateRate: seconds
+dataLatency: seconds
+availability: percentage uptime
+storageDuration: days
+dataRange: meters
