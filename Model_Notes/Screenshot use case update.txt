@@ -1,0 +1,28 @@
+The source provides a **SysML Use Case Diagram** titled **"uc [Package] 2 Use Cases [ 2 Use Cases At Home Weather ]"**. The diagram illustrates the external interactions and functional requirements of a **Home Weather Station** system.
+
+### **System Boundary and Actors**
+*   **System Boundary**: The system is represented by a large tan-colored rectangle labeled with the stereotype **`«block»` Home Weather Station**.
+*   **External Actors**: There are two primary actors represented as stick figures outside the system boundary:
+    *   **User**: Positioned on the left, connected via a solid line (association) to the main use case.
+    *   **Weather Environment**: Positioned on the right, also connected via a solid line to the main use case.
+
+### **Use Cases and Functional Relationships**
+The diagram centers around one primary Use Case which coordinates several sub-functions:
+
+1.  **Primary Use Case: Provide Real-Time Weather Data**
+    *   This is the central oval in the diagram.
+    *   It contains an **extension point** labeled **"alerts"**.
+    *   Both the **User** and the **Weather Environment** interact directly with this use case.
+
+2.  **Included Use Cases (`«include»`)**
+    The central use case "Provide Real-Time Weather Data" has mandatory dependencies on three other use cases, indicated by dashed arrows pointing toward them:
+    *   **Collect Sensor Data**: Mandatory for providing weather data.
+    *   **Process Weather Data**: Mandatory for providing weather data.
+    *   **Display Weather Data**: Mandatory for providing weather data.
+
+3.  **Extended Use Case (`«extend»`)**
+    *   **Receive Alerts**: This use case is connected to the primary use case via a dashed arrow pointing from "Receive Alerts" *to* "Provide Real-Time Weather Data".
+    *   The relationship is labeled **`«extend» (alerts)`**, indicating that "Receive Alerts" is a conditional function that occurs at the "alerts" extension point.
+
+### **Additional Metadata and Annotations**
+*   **Comment Box**: A text note on the right side states: *"The Home Weather Station is treated as a single system block; internal implementation details are hidden, showing only external interactions."*.
