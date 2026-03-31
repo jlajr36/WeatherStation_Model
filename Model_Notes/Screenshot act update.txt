@@ -1,0 +1,27 @@
+The provided source is a **SysML or UML Activity Diagram** titled **"Provide Real-Time Weather Data"**. This diagram illustrates the functional flow and interactions between three distinct entities, organized into vertical partitions or swimlanes.
+
+### **Diagram Architecture**
+The diagram is divided into three primary **partitions** (swimlanes), each labeled with the «allocate» stereotype, indicating responsible components:
+1.  **Weather Environment:** The external source of atmospheric data.
+2.  **Home Weather Station:** The central processing unit that manages data and user requests.
+3.  **User Device:** The interface (such as a smartphone or tablet) through which the user interacts with the system.
+
+### **Activity Nodes and Control Flows**
+The process begins in the **Weather Environment** partition and follows two main interaction sequences:
+
+#### **1. Automated Data Reporting Flow**
+*   **Initial Node:** A solid black circle in the "Weather Environment" indicates the starting point of the activity.
+*   **Generate Sensor Data:** The first action occurs in the Environment, where raw data is produced.
+*   **Receive Sensor Data:** An object flow (dashed line) transfers the generated data from the Environment to the **Home Weather Station**.
+*   **Provide Weather Data & Alerts:** Upon receiving data, the Home Weather Station processes it to create actionable information or alerts.
+*   **Display Weather Data & Alerts:** An object flow (dashed line) sends this processed information to the **User Device** for the end-user to view.
+
+#### **2. User-Initiated Request Flow**
+*   **Send Command:** This sequence originates in the **User Device** partition, representing a user requesting specific information (e.g., historical records).
+*   **Receive User Command:** An object flow (dashed line) transfers the command from the User Device back to the **Home Weather Station**.
+*   **Provide Requested Data:** The Home Weather Station processes the specific command to retrieve the relevant information.
+*   **Display Historical / Requested Data:** An object flow (dashed line) sends the retrieved data to the **User Device** to be displayed to the user.
+
+### **Visual Conventions**
+*   **Activity Nodes:** Actions are represented by rounded rectangles.
+*   **Control/Object Flows:** Solid arrows represent the internal logic flow within a partition, while dashed arrows (object flows) represent the movement of data or signals across the boundaries of the different system components.
