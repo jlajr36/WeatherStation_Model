@@ -1,25 +1,34 @@
-The provided image is a **SysML Activity Diagram** titled **"Provide Real-Time Weather Data"**. It uses three vertical **partitions (swimlanes)** to allocate specific actions to different system components: **Weather Environment**, **Home Weather Station**, and **User Device**.
+The source provided is a **SysML Activity Diagram** titled **"Provide Real-Time Weather Data"**. The diagram is organized into three vertical partitions (swimlanes), each representing an allocated system component: **Weather Environment**, **Home Weather Station**, and **User Device**.
 
-### **Diagram Structure and Logic**
+### **Diagram Structure and Flow Details**
 
-The diagram depicts two distinct workflows: a proactive data generation flow and a reactive user-command flow.
+The diagram illustrates two primary functional flows: an automated data reporting flow and a user-initiated request flow.
 
-#### **1. Proactive Weather Data Flow**
-*   **Trigger:** The process begins in the **Weather Environment** partition at an **Initial Node** (represented by a solid black circle).
-*   **Step 1:** The first action is **"Generate Sensor Data"** within the Weather Environment.
-*   **Step 2:** Data flows via an output pin to the **Home Weather Station** partition for the action **"Provide Weather Data & Alerts"**. This action includes a "rake" icon, signifying it is a **Call Behavior Action** (referencing a more detailed sub-activity).
-*   **Step 3:** The flow continues to the **User Device** partition for the action **"Display Weather Data & Alerts"**.
-*   **Termination:** This sequence ends at an **Activity Final Node** (a bullseye icon).
+#### **1. Automated Weather Reporting Flow**
+*   **Weather Environment Partition:**
+    *   The process begins at an **Initial Node** (solid black circle), which leads to the action **"Generate Sensor Data"**.
+    *   This action produces an output via an object pin labeled **"SensorData"**.
+*   **Home Weather Station Partition:**
+    *   The **"SensorData"** is received by an input pin on the action **"Provide Weather Data & Alerts"**. 
+    *   This action is marked with a decomposition symbol (a small rake-like icon), indicating it contains further nested sub-activities.
+    *   It outputs data through a pin labeled **"WeatherDataAndAlerts"**.
+*   **User Device Partition:**
+    *   The **"WeatherDataAndAlerts"** enters an input pin on the action **"Display Weather Data & Alerts"**.
+    *   Once the data is displayed, the flow terminates at an **Activity Final Node** (a bullseye symbol).
 
-#### **2. Reactive User-Command Flow**
-*   **Trigger:** A second **Initial Node** is located in the **User Device** partition.
-*   **Step 1:** The user initiates the **"Send Command"** action.
-*   **Step 2:** The command flow moves to the **Home Weather Station**, triggering the action **"Provide Requested Data"** (also a Call Behavior Action).
-*   **Step 3:** The requested data is sent back to the **User Device** for the action **"Display Requested Data"**.
-*   **Termination:** This sequence ends at a separate **Activity Final Node** within the User Device partition.
+#### **2. User-Requested Data Flow**
+*   **User Device Partition:**
+    *   A second **Initial Node** triggers the action **"Send Command"**.
+    *   This action generates an output pin labeled **"UserCommand"**.
+*   **Home Weather Station Partition:**
+    *   The **"UserCommand"** flows into an input pin on the action **"Provide Requested Data"** (which also features a decomposition symbol).
+    *   This action processes the command and outputs an object pin labeled **"RequestedData"**.
+*   **User Device Partition (Return):**
+    *   The **"RequestedData"** flows back to the User Device, entering an input pin for the action **"Display Requested Data"**.
+    *   This process concludes at another **Activity Final Node**.
 
-### **Visual and Technical Notation**
-*   **Action Nodes:** Represented as tan-colored rounded rectangles.
-*   **Object/Control Pins:** Small square boxes on the boundaries of the action rectangles indicate the entry and exit points for data or control flow.
-*   **Arrows:** Solid lines with open arrowheads indicate the **Control/Object Flow** between actions and across partition boundaries.
-*   **Allocations:** Each partition header is prefixed with the **«allocate»** stereotype, mapping logical behaviors to physical or environmental entities.
+### **Technical Summary for AI Modeling**
+*   **Diagram Type:** SysML Activity Diagram (`act`).
+*   **Partitions (Allocations):** `Weather Enviroment` (Note: spelled with one 'n' in source), `Home Weather Station`, and `User Device`.
+*   **Edges:** The diagram uses **Object Flows** (represented by arrows between rectangular pins) to transition data between partitions and **Control Flows** to transition between nodes within a partition.
+*   **Key Objects:** `SensorData`, `WeatherDataAndAlerts`, `UserCommand`, and `RequestedData`.

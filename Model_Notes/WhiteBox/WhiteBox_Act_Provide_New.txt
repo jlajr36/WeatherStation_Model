@@ -1,0 +1,28 @@
+The provided source is a **UML Activity Diagram** titled **"Provide Weather Data & Alerts"**. This diagram illustrates a sequential process for handling sensor information, generating forecasts, and communicating results to a user.
+
+### Diagram Overview and Structure
+*   **Initial Node:** The process begins at a solid black circle at the top of the diagram.
+*   **Activity Nodes:** These are represented as rounded rectangles containing specific actions.
+*   **Decision Points:** These are represented by diamond shapes, indicating conditional logic.
+*   **Data Flow:** Arrows indicate the direction of the process, and many are labeled with the type of data being passed between nodes.
+*   **Final Node:** The process concludes at a bullseye symbol (a solid black circle within an outer ring) at the bottom.
+
+### Step-by-Step Logic and Flow
+1.  **Receive Sensor Data:** The process starts by receiving `SensorData` from an external input ("In").
+2.  **Validate Sensor Data:** The `Raw Data` is passed to this node for verification.
+3.  **Decision - Data Valid?:**
+    *   **If [No]:** The flow moves to **Log Error / Retry**. A dashed line then loops back to the **Receive Sensor Data** stage to attempt the process again.
+    *   **If ValidData:** The flow proceeds to the next stage.
+4.  **Aggregate Data:** The validated data is processed here.
+5.  **Compute Forecast:** Using the `AggregatedData`, the system generates a weather prediction.
+6.  **Check Alert Conditions:** The `ForecastData` is analyzed to determine if specific weather thresholds are met.
+7.  **Decision - Alert Required?:**
+    *   **If [No]:** The flow goes to **Skip Alert**.
+    *   **If Alert Flag:** The flow goes to **Generate Alert Notification**.
+8.  **Merge Point:** Both the "Skip Alert" and "Generate Alert Notification" paths converge at a diamond-shaped merge node.
+9.  **Format Data for Display:** The `PreparedData` (which includes either the forecast alone or the forecast plus an alert) is formatted for the user interface.
+10. **Output to User Device:** The `DisplayData` is sent to the final action node, which then directs the output to an external "out" destination.
+
+### Noted Data Elements
+The labels on the flow lines specify the transformation of data through the system:
+*   `SensorData` -> `Raw Data` -> `ValidData` -> `AggregatedData` -> `ForecastData` -> `Alert Flag` -> `PreparedData` -> `DisplayData`.
