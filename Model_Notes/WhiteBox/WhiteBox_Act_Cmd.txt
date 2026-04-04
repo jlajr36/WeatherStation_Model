@@ -1,4 +1,4 @@
-The provided source is a **UML Activity Diagram** titled **"Provide Weather Data & Alerts."** This diagram models the sequential and conditional workflow of a system designed to process sensor data into weather information and notifications.
+The provided source is a **sysml Activity Diagram** titled **"Provide Weather Data & Alerts."** This diagram models the sequential and conditional workflow of a system designed to process sensor data into weather information and notifications.
 
 Below is a detailed structural breakdown of the diagram's components and flow:
 

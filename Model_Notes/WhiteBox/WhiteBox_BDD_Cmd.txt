@@ -1,0 +1,13 @@
+Block: Home_Weather_Station
+│
+├── Command_Module
+│     ├─ Handles: Send_Command, Provide_Requested_Data
+│     └─ Port: RequestedDataOut : RequestedData
+│
+└── Formatter
+      ├─ Handles: Display_Requested_Data
+      └─ Port: DisplayDataOut : DisplayData
+           │
+           └──> User_Device
+                 ├─ Port: UserCommandIn : UserCommand
+                 └─ Port: DisplayDataIn : DisplayData

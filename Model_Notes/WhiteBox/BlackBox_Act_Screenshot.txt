@@ -29,6 +29,6 @@ The diagram illustrates two primary functional flows: an automated data reportin
 
 ### **Technical Summary for AI Modeling**
 *   **Diagram Type:** SysML Activity Diagram (`act`).
-*   **Partitions (Allocations):** `Weather Enviroment` (Note: spelled with one 'n' in source), `Home Weather Station`, and `User Device`.
+*   **Partitions (Allocations):** `Weather Environment` (Note: spelled with one 'n' in source), `Home Weather Station`, and `User Device`.
 *   **Edges:** The diagram uses **Object Flows** (represented by arrows between rectangular pins) to transition data between partitions and **Control Flows** to transition between nodes within a partition.
 *   **Key Objects:** `SensorData`, `WeatherDataAndAlerts`, `UserCommand`, and `RequestedData`.

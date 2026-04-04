@@ -1,0 +1,20 @@
+Block: Home_Weather_Station
+│
+├── Sensor_Module
+│     ├─ Handles: Receive_Sensor_Data, Validate_Sensor_Data, Log_Error_Retry
+│     └─ Port: ValidDataOut : ValidData
+│
+├── Forecast_Module
+│     ├─ Handles: Aggregate_Data, Compute_Forecast
+│     └─ Port: ForecastDataOut : ForecastData
+│
+├── Alert_Module
+│     ├─ Handles: Check_Alert_Conditions, Skip_Alert, Generate_Alert_Notification, Merge_Point
+│     └─ Port: PreparedDataOut : PreparedData
+│
+└── Formatter
+      ├─ Handles: Format_Data_for_Display
+      └─ Port: DisplayDataOut : DisplayData
+           │
+           └──> User_Device
+                 └─ Port: DisplayDataIn : DisplayData
