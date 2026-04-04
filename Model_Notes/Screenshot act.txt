@@ -1,37 +1,32 @@
-This is a **SysML/UML Activity Diagram** titled **"Provide Real-Time Weather Data"**. The diagram is organized into four vertical **swimlanes (partitions)**, each representing a different component or entity allocated to specific actions.
+The source is a **SysML Activity Diagram** titled **"act [Activity] Provide Real-Time Weather Data"**. The diagram describes the functional flow and interactions between three allocated entities, represented as vertical **swimlanes (partitions)**: **Weather Environment**, **Home Weather Station**, and **User Device**.
 
-### **Diagram Structure and Components**
+The diagram contains two primary functional flows:
 
-1.  **Swimlanes (Allocated Entities):**
-    *   **Weather Environment:** The source of raw data.
-    *   **Home Weather Station:** The central processing hub for the system.
-    *   **Data Storage:** A repository for long-term data retention.
-    *   **User Device:** The interface for the end-user (e.g., a smartphone or tablet).
+### 1. Real-Time Weather Reporting Flow
+This flow describes the automated process of capturing environment data and delivering it to the user.
+*   **Initial Node:** Located in the **Weather Environment** swimlane.
+*   **Generate Sensor Data:** The first action occurs in the Weather Environment. It outputs an object flow labeled **"SensorData"** to the next partition.
+*   **Receive Sensor Data:** The **Home Weather Station** receives the data.
+*   **Process Into Weather Data:** The Home Weather Station processes the raw sensor input.
+*   **Decision Node (Check Alert Conditions):** A diamond-shaped decision node evaluates the data.
+    *   **[Yes] Path:** If alert conditions are met, it triggers the **Generate Alert** action.
+    *   **Default Path:** If no alert is needed, the flow bypasses the alert generation and proceeds to report creation.
+*   **Create Weather Report:** This action aggregates the data (and alerts, if applicable) and outputs an object flow labeled **"WeatherReport"** to the final partition.
+*   **Display Weather Data & Alerts:** The **User Device** performs this action to show the information to the end-user.
+*   **Activity Final Node:** The flow terminates at a bullseye symbol within the User Device swimlane.
 
-2.  **Visual Notation:**
-    *   **Initial Node:** A solid black circle in the "Weather Environment" lane signifies the start of the activity.
-    *   **Actions:** Rounded rectangles containing text describe specific tasks.
-    *   **Control Flows:** Solid lines with arrowheads indicate the sequential order of actions.
-    *   **Object/Information Flows:** Dashed lines with arrowheads indicate the transfer of data between entities.
+### 2. User-Initiated Request Flow
+This flow describes how a user manually requests specific information.
+*   **Initial Node:** Located in the **User Device** swimlane.
+*   **Send Command:** The user initiates a request, which outputs an object flow labeled **"UserCommand"** back to the station.
+*   **Receive User Command:** The **Home Weather Station** receives the command.
+*   **Process Request:** The station interprets the user's specific instruction.
+*   **Retrieve Data:** The station fetches the requested information.
+*   **Display Requested Data:** The retrieved data is sent back to the **User Device** for the final action.
+*   **Activity Final Node:** This flow also terminates at a bullseye symbol within the User Device swimlane.
 
----
-
-### **Detailed Process Flow**
-
-#### **1. Data Generation and Initial Processing**
-*   The process begins in the **Weather Environment** at the **Initial Node**, leading to the action **"Generate Sensor Data"**.
-*   An information flow (dashed line) carries this data to the **Home Weather Station**, which executes the **"Receive Sensor Data"** action.
-*   From there, the station moves to **"Provide Weather Data & Alerts"**.
-
-#### **2. Real-Time Output and Storage**
-*   The **"Provide Weather Data & Alerts"** action has two subsequent paths:
-    *   An information flow sends data to the **User Device**, which triggers **"Display Weather Data & Alerts"**.
-    *   A control flow moves to **"Store Weather Data"** within the station.
-*   The **"Store Weather Data"** action sends an information flow to the **Data Storage** lane, triggering the **"Store Data"** action.
-
-#### **3. User Interaction and Historical Data Retrieval**
-*   The **User Device** can initiate a request via the **"Send Command"** action.
-*   This command is sent as an information flow to the **Home Weather Station**, triggering **"Receive User Command"**.
-*   Following the command receipt, the station moves to **"Provide Requested Data"**.
-*   To fulfill this, an information flow is sent from the **Data Storage** action **"Provide Historical Data"** back to the station's **"Provide Requested Data"** action.
-*   Finally, the requested data is sent via an information flow to the **User Device**, where it is handled by the action **"Display Historical / Requested Data"**.
+### Technical Visual Notations
+*   **Actions:** Represented by rounded rectangles.
+*   **Object Flows:** Represented by arrows with labels, often originating or terminating at small squares (pins) on the action boundaries.
+*   **Control Flows:** Represented by standard arrows between nodes.
+*   **Partitions:** Designated with `<<allocate>>` stereotypes at the top of each swimlane.

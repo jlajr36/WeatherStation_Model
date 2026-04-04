@@ -1,0 +1,41 @@
++------------------------+------------------------------+--------------------------+
+| Weather Environment    | Home Weather Station         | User Device              |
++------------------------+------------------------------+--------------------------+
+
+| ●                      |                              |                          |
+| |                      |                              |                          |
+| [Generate Sensor Data] |                              |                          |
+| |                      |                              |                          |
+| |---- SensorData ----->| [Receive Sensor Data]         |                          |
+|                        |        |                     |                          |
+|                        |        v                     |                          |
+|                        | [Process Sensor Data]        |                          |
+|                        |        |                     |                          |
+|                        | [Check Alert Conditions]     |                          |
+|                        |       /   \                  |                          |
+|                        |    yes     no               |                          |
+|                        |     |        |              |                          |
+|                        | [Generate Alert]            |                          |
+|                        |        \      /             |                          |
+|                        |         v    v              |                          |
+|                        | [Create Weather Report]     |                          |
+|                        |        |                    |                          |
+|                        |---- WeatherReport --------->| [Display Data & Alerts]  |
+|                        |                             |        |                 |
+|                        |                             |        v                 |
+|                        |                             |        ●                 |
+
+|                        |                              |                          |
+|                        |                              | ●                        |
+|                        |                              | |                        |
+|                        |<--- UserCommand -------------| [Send Command]           |
+|                        | [Receive User Command]        |                          |
+|                        |        |                     |                          |
+|                        | [Process Request]            |                          |
+|                        |        |                     |                          |
+|                        | [Retrieve Data]              |                          |
+|                        |        |                     |                          |
+|                        |---- RequestedData ---------> | [Display Requested Data] |
+|                        |                              |        |                 |
+|                        |                              |        v                 |
+|                        |                              |        ●                 |
