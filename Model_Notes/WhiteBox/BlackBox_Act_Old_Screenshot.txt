@@ -1,0 +1,31 @@
+This is a description of a **SysML Activity Diagram** titled **"act [Activity] Provide Real-Time Weather Data"**. The diagram is structured into three vertical partitions (swimlanes), each representing an allocated block or system entity.
+
+### **Partitions (Swimlanes)**
+1.  **Weather Environment:** Represents the external environment where data originates.
+2.  **Home Weather Station:** Represents the primary system processing the data.
+3.  **User Device:** Represents the interface through which the end-user interacts with the system.
+
+### **Sequence of Actions and Flows**
+The logic of the diagram follows two main functional paths: an automated data reporting loop and a user-driven request path.
+
+#### **Path 1: Automated Weather Data Provisioning**
+*   **Initial Node:** The process begins at a solid black circle (initial node) within the **Weather Environment** partition.
+*   **Action 1 (Weather Environment):** A control flow leads to the action **"Generate Sensor Data"**.
+*   **Inter-partition Flow:** An object flow (dashed arrow) moves from "Generate Sensor Data" to the **Home Weather Station** partition.
+*   **Action 2 (Home Weather Station):** The system performs **"Receive Sensor Data"**.
+*   **Action 3 (Home Weather Station):** A control flow (solid arrow) leads to **"Provide Weather Data & Alerts"**. This action node includes a **rake symbol**, indicating it is a call behavior that references a more detailed sub-activity.
+*   **Inter-partition Flow:** A dashed arrow carries the output from the weather station to the **User Device**.
+*   **Action 4 (User Device):** The user’s device executes **"Display Weather Data & Alerts"**.
+
+#### **Path 2: User-Requested Data**
+*   **Action 5 (User Device):** The user initiates the flow with **"Send Command"**.
+*   **Inter-partition Flow:** A dashed arrow moves from the user device back to the **Home Weather Station**.
+*   **Action 6 (Home Weather Station):** The system performs **"Receive User Command"**.
+*   **Action 7 (Home Weather Station):** The system then executes **"Provide Requested Data"**.
+*   **Inter-partition Flow:** A dashed arrow sends the requested information back to the **User Device**.
+*   **Action 8 (User Device):** The final action is **"Display Historical / Requested Data"**.
+
+### **Visual and Symbolic Details**
+*   **Action Nodes:** All actions are represented as rounded tan rectangles.
+*   **Flows:** Solid lines represent control flows (sequencing of tasks), while dashed lines represent object flows (movement of data or commands between entities).
+*   **Stereotypes:** Each partition header is marked with the **«allocate»** stereotype, signifying that these logical activities are assigned to specific physical or functional components.

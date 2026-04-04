@@ -1,0 +1,25 @@
+The provided image is a **SysML Activity Diagram** titled **"Provide Real-Time Weather Data"**. It uses three vertical **partitions (swimlanes)** to allocate specific actions to different system components: **Weather Environment**, **Home Weather Station**, and **User Device**.
+
+### **Diagram Structure and Logic**
+
+The diagram depicts two distinct workflows: a proactive data generation flow and a reactive user-command flow.
+
+#### **1. Proactive Weather Data Flow**
+*   **Trigger:** The process begins in the **Weather Environment** partition at an **Initial Node** (represented by a solid black circle).
+*   **Step 1:** The first action is **"Generate Sensor Data"** within the Weather Environment.
+*   **Step 2:** Data flows via an output pin to the **Home Weather Station** partition for the action **"Provide Weather Data & Alerts"**. This action includes a "rake" icon, signifying it is a **Call Behavior Action** (referencing a more detailed sub-activity).
+*   **Step 3:** The flow continues to the **User Device** partition for the action **"Display Weather Data & Alerts"**.
+*   **Termination:** This sequence ends at an **Activity Final Node** (a bullseye icon).
+
+#### **2. Reactive User-Command Flow**
+*   **Trigger:** A second **Initial Node** is located in the **User Device** partition.
+*   **Step 1:** The user initiates the **"Send Command"** action.
+*   **Step 2:** The command flow moves to the **Home Weather Station**, triggering the action **"Provide Requested Data"** (also a Call Behavior Action).
+*   **Step 3:** The requested data is sent back to the **User Device** for the action **"Display Requested Data"**.
+*   **Termination:** This sequence ends at a separate **Activity Final Node** within the User Device partition.
+
+### **Visual and Technical Notation**
+*   **Action Nodes:** Represented as tan-colored rounded rectangles.
+*   **Object/Control Pins:** Small square boxes on the boundaries of the action rectangles indicate the entry and exit points for data or control flow.
+*   **Arrows:** Solid lines with open arrowheads indicate the **Control/Object Flow** between actions and across partition boundaries.
+*   **Allocations:** Each partition header is prefixed with the **«allocate»** stereotype, mapping logical behaviors to physical or environmental entities.
