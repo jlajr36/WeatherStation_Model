@@ -1,4 +1,4 @@
-The provided source is a **UML Activity Diagram** titled **"Provide Weather Data & Alerts"**. This diagram illustrates a sequential process for handling sensor information, generating forecasts, and communicating results to a user.
+The provided source is a **sysml Activity Diagram** titled **"Provide Weather Data & Alerts"**. This diagram illustrates a sequential process for handling sensor information, generating forecasts, and communicating results to a user.
 
 ### Diagram Overview and Structure
 *   **Initial Node:** The process begins at a solid black circle at the top of the diagram.

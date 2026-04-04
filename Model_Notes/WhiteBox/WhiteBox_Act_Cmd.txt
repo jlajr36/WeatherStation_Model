@@ -1,0 +1,40 @@
+The provided source is a **UML Activity Diagram** titled **"Provide Weather Data & Alerts."** This diagram models the sequential and conditional workflow of a system designed to process sensor data into weather information and notifications.
+
+Below is a detailed structural breakdown of the diagram's components and flow:
+
+### **1. Core Structure and Entry/Exit Points**
+*   **Initial Node:** The process begins at a solid black circle at the top of the diagram.
+*   **External Input:** A rectangular box labeled **"In"** provides **"SensorData"** to the first activity.
+*   **Final Node:** The process terminates at a bullseye symbol (a black circle within a ring) at the bottom.
+*   **External Output:** A rectangular box labeled **"out"** receives data from the final activity.
+
+### **2. Step-by-Step Functional Flow**
+The diagram consists of several actions represented by rounded rectangles, connected by directed arrows (control/data flows):
+
+1.  **Receive Sensor Data:** Receives input from the external "In" source. It produces **"Raw Data"**.
+2.  **Validate Sensor Data:** Takes the "Raw Data" as input to check for accuracy or integrity.
+3.  **Decision Point (Data Valid?):** A diamond-shaped node evaluates the validation results:
+    *   **If [No]:** The flow moves to **"Log Error / Retry,"** which then loops back to the "Receive Sensor Data" action.
+    *   **If "ValidData":** The flow proceeds to the next processing stage.
+4.  **Aggregate Data:** Processes the "ValidData" into **"AggregatedData"**.
+5.  **Compute Forecast:** Uses "AggregatedData" to generate **"ForecastData"**.
+6.  **Check Alert Conditions:** Analyzes the "ForecastData" to determine if weather alerts are necessary.
+7.  **Decision Point (Alert Required?):** A second diamond-shaped node handles the alert logic:
+    *   **If [No]:** The flow goes to **"Skip Alert"**.
+    *   **If "Alert Flag":** The flow goes to **"Generate Alert Notification"**.
+8.  **Merge Point:** A diamond-shaped node collects the results from either "Skip Alert" or "Generate Alert Notification" to produce **"PreparedData"**.
+9.  **Format Data for Display:** Takes "PreparedData" and converts it into **"DisplayData"**.
+10. **Output to User Device:** The final action sends the "DisplayData" to the external **"out"** terminal and then moves to the Final Node.
+
+### **3. Data Object Summary**
+The diagram explicitly tracks the transformation of data through the following states:
+*   **SensorData** (Input)
+*   **Raw Data**
+*   **ValidData**
+*   **AggregatedData**
+*   **ForecastData**
+*   **PreparedData**
+*   **DisplayData** (Output)
+
+### **4. Visual Notations and Metadata**
+*   **Activity Boundary:** All actions are contained within a large rectangular frame.
