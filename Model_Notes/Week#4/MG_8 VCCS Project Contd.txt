@@ -1,0 +1,200 @@
+0:022 secondsHello and welcome back. In this session,
+0:055 secondswe will uh dive into the solution uh domain. We will uh cover in this session the system uh system level um analysis
+0:1414 secondsthat we will um conduct using these uh diagrams and views. Uh this is the higher level system element. And then um
+0:2323 secondsin the next uh um uh session we will do this sub system and this focuses only on
+0:3030 secondsthe cooling system. Um uh again you can have the multiple uh system again um um analyzed as well.
+0:4040 secondsuh in the uh videos uh I covered the instructions till the subsystem structure but for the assignment I want
+0:4848 secondsyou to uh cover just the system level uh analysis uh for this week. So in the uh
+0:5757 secondsum uh here we will explore the these diagrams that I will guide us through the system through from the system
+1:041 minute, 4 secondsrequirement to an integrated uh system behavior and system parameters as well. Uh so uh let's uh get into each of
+1:141 minute, 14 secondsthese diagram and understand their connections. Uh here we will start with the system requirement level. Um and in
+1:211 minute, 21 secondsthis uh here we added detailed requirement that will guide us through the uh VCSS uh design such as setting
+1:291 minute, 29 secondsthe desired temperature, getting ambient uh temperature, heating, cooling and more. Um these requirements helps us
+1:361 minute, 36 secondsdefine what the system needs to accomplish. Uh so it captured the most essential system requirement um and in
+1:441 minute, 44 secondsin more details as well. Uh in addition uh we make sure that we trace these uh
+1:521 minute, 52 secondsuh requirements to um uh the um uh this stakeholder needs with the system
+1:591 minute, 59 secondsrequirements. So uh we we derive these uh uh we we connect them with the derived requirement like based on these
+2:062 minutes, 6 secondsuser needs we uh identify this uh system uh requirement at the system uh level.
+2:132 minutes, 13 secondsSo this shows how we link these lower level system architecture and how they derived from these specific uh uh stakeholder
+2:222 minutes, 22 secondsneeds. Um and um with these traceability matrices we want to make sure that we always align with the original uh
+2:302 minutes, 30 secondsrequirements so that traceability stays throughout the different level of abstraction. Um in addition here we uh
+2:392 minutes, 39 secondsuh we can use these relationship map to uh put these um derived uh uh
+2:462 minutes, 46 secondsrequirement from this uh another view of it in a relationship map. Again for some user they prefer to see this um in such um uh format.
+2:592 minutes, 59 secondsUm in addition here we have this diagram help us to uh trace the um uh element at
+3:073 minutes, 7 secondsthe system level to these requirement like which elements whether part property constraint property value properties ports satisfying these
+3:153 minutes, 15 secondsdifferent system u requirements. So again um uh here we just like we man to
+3:233 minutes, 23 secondsmake sure that uh uh uh these uh requirements are covered uh uh through
+3:293 minutes, 29 secondsum uh refining and and deriving them from the user needs as well as we have the uh physical components uh in this
+3:383 minutes, 38 secondsdesign of the system that are satisfying uh these system requirements.
+3:443 minutes, 44 secondsUm uh this is the same uh uh the the same view but it was accessed from that
+3:513 minutes, 51 secondsuh here uh the system requirements this is again the making sure that how much we it got refined with every level so it
+3:593 minutes, 59 secondsit keep tracks of that we discussed that in the last video um so in the logical architecture of the
+4:074 minutes, 7 secondsVCSS uh here we use the BDD uh uh to make to uh model uh the VCSS
+4:154 minutes, 15 secondsarchitecture the logical uh we want to we divide them into subsystem like cooling, heating, the central processing uh and uh we uh we start decomposing it.
+4:254 minutes, 25 secondsUh here we look at the logical structure um and the interaction between them through the ports. Uh you want to make
+4:324 minutes, 32 secondssure that this is um uh very well um uh organized. Uh so here are the different
+4:404 minutes, 40 secondsexchange uh elements that happen at the system level with these um elements. Uh
+4:464 minutes, 46 secondsso the VCSS um um is composed of the cooling system and I want to go ahead
+4:524 minutes, 52 secondsand and and show you uh in here there's the generalization from the cooling system architecture. So each subsystem
+5:025 minutes, 2 secondshere has its own model. So the cooling sub subsystem architecture owns. If we
+5:085 minutes, 8 secondslook up that cooling subsystem architecture element for which this element inher inherits
+5:175 minutes, 17 secondseverything has um all the state machines all the different analysis and uh at the
+5:245 minutes, 24 secondssubsystem level. So for each uh here for each subsystem it's that we have it our
+5:325 minutes, 32 secondsown med uh uh model that specify its requirements structure behavior parameters and traceability. All the
+5:405 minutes, 40 secondswork that has been accomplished here has been inherited uh through the element that represent that system and that's
+5:475 minutes, 47 secondsfor modularity. So I I keep working on that subsystem and I inherit all these elements as well here.
+5:555 minutes, 55 secondsAnd this is the representation of how that system being structured, how they interact um uh in that solution. So
+6:036 minutes, 3 secondsagain the same elements that we talked about but in a more details uh um um model uh and architecture as well.
+6:146 minutes, 14 secondsSo um here uh uh this is um again uh uh
+6:206 minutes, 20 secondsthat VCC configuration that also is composed of these elements uh uh get
+6:286 minutes, 28 secondsinherited as well from uh um um uh the VCS elements. So it it uh it has uh it
+6:366 minutes, 36 secondsinherits all these elements and redefineses some some of that as well by by uh by inheritance. And here we want
+6:446 minutes, 44 secondsto make sure that we configure the uh VCSS um correctly with the right connections and data flow to achieve the
+6:526 minutes, 52 secondsuh desired temperature. So again that is uh the way of modeling it. Um each element has its own or each subsystem has its own model.
+7:027 minutes, 2 secondsum uh the uh the VCSS configuration is the connecting point between that elements that represent the whole
+7:107 minutes, 10 secondssystem. Uh but the work for each uh um um mod uh subsystem has been
+7:177 minutes, 17 secondsaccomplished in a separate model and used in this project as well.
+7:237 minutes, 23 secondsSo um before we move on uh we have completed this system structure. We uh we described that logical architecture.
+7:327 minutes, 32 secondsuh we reference these uh uh the subsystem packet uh model itself in in
+7:397 minutes, 39 secondsthat logical architecture because again we are inheriting that uh element we're connecting this as well as the we have
+7:477 minutes, 47 secondsthe VCCS configuration model here the system configuration and uh that uh that
+7:557 minutes, 55 secondsitself if I open that up the VCSS configuration let's See
+8:038 minutes, 3 secondsum I want to show it to you in a different way. So if I do specification this element and I go to
+8:118 minutes, 11 secondsrelations um along with all it's uh decomposition of uh composing these architecture from the different s uh
+8:208 minutes, 20 secondsmodels the inheritance relationship that take from uh u from the vcs configuration to the vsss inherits all
+8:298 minutes, 29 secondsthese val all of these properties into this uh element that we are representing in the solution domain.
+8:368 minutes, 36 secondsSo this is the block that represent the system in the solution domain. It inherits all of these features that the
+8:448 minutes, 44 secondsVCSS configuration has. Um again the modeler chose to uh to model each of the
+8:508 minutes, 50 secondssubsystem in a separate uh um um in a separate model of MDZ MDZ on its own. So
+8:598 minutes, 59 secondsthat these are the views that have are being represented in um in the uh uh
+9:069 minutes, 6 secondssystem structure. Uh now we want to move on into the integrated behavior. The VCSS is this system level and um in here
+9:169 minutes, 16 secondswe want to uh describe um yeah stop that
+9:249 minutes, 24 secondssimulation. Yes. Okay. So we want to have an integrated behavior for this
+9:319 minutes, 31 secondssystem level. Um again we have cooling system cooling system HMI system. Uh we
+9:389 minutes, 38 secondshave the uh uh the uh the CP system as well and um the I don't think the
+9:469 minutes, 46 secondsheating system is in uh this integrated view. So the three systems that we have been focused on in this view is the
+9:549 minutes, 54 secondscooling, the CP and the HMI. Uh this integrated behavior view looks at uh
+10:0210 minutes, 2 secondsthese three systems and utilizing the state machine uh the activity diagram and the internal block diagram.
+10:1010 minutes, 10 secondsuh here we want to make sure that we are um uh creating that focus on understanding how all the these behavior
+10:1810 minutes, 18 secondsin the system are executed uh from top level control to each individual subsystem that we're seeing here in this
+10:2610 minutes, 26 secondsscreen. Um we um uh provided also a list of small videos that show you the
+10:3310 minutes, 33 secondsmechanics of how to uh uh connect these um uh um behavioral diagrams together
+10:4110 minutes, 41 secondsfrom the higher level context um that is um um the top level that access uh all
+10:4810 minutes, 48 secondsof these state machine underneath and uh the uh values as well. So uh you need to
+10:5610 minutes, 56 secondsstart smaller in creating this but uh the idea is is to have a higher level context that access all of these state
+11:0511 minutes, 5 secondsmachine that are included within each of these uh uh subsystems. So this is the
+11:1211 minutes, 12 secondsVCCS configuration and if I open that VCSS configuration it has a part properties of the CP. Now if I go to the
+11:2111 minutes, 21 secondsCP and I go to this type, this CP has this state machine that I'm uh uh
+11:2911 minutes, 29 secondsputting here as well. This is the IBD that is owned by that uh higher level VCCS
+11:3611 minutes, 36 secondsconfiguration and um in addition these are the diff that other two-state machines of the subsystem that the
+11:4411 minutes, 44 secondshigher level element the VCC configuration has part properties of. So that sub higher level context is able to access all of these uh um um elements.
+11:5811 minutes, 58 secondsUm they um they uh have access to the state machine value properties that are contained within this
+12:0712 minutes, 7 secondssystem. And in addition this if I select this in the containment tree um this is the subsystem uh uh configuration. This
+12:1612 minutes, 16 secondsis within the CP but the CP or is part of the VCC configuration. This is the part property that is represented within
+12:2512 minutes, 25 secondsthe uh VCC. So when I run the simulation from the context of the of this higher level the VCC I can run the whole
+12:3412 minutes, 34 secondsintegrated view of these system and subsystem within um that level. So let me show you if I run the simulation from
+12:4212 minutes, 42 secondsthis CP system structure. If I do run simulation and run and I have all of these elements
+12:5112 minutes, 51 secondshere. If I click on run um and it's waiting for these uh signals
+13:0013 minutesto be sent. I will say idle uh let you know ignition
+13:0713 minutes, 7 secondson and only the two um activities within the CP gets executed. However, if I run
+13:1513 minutes, 15 secondsthe simulation from the top level element which is the VCC configuration the whole intake I'm going
+13:2313 minutes, 23 secondsto stop the simulation and I'm going to right click on this uh uh context and I run that
+13:3013 minutes, 30 secondssimulation and click run and you can see the all these state machines the IBD
+13:3613 minutes, 36 secondsthat's owned by um this PCC configuration is being executed as well.
+13:4213 minutes, 42 secondsSo you have to def to uh define that higher level context uh run the simulation from it and uh execute that
+13:5013 minutes, 50 secondsintegrated behavior um uh uh together like as a whole view. Now this diagram
+13:5713 minutes, 57 secondsis a content diagram. So if I click on that specification that is a content diagram that's representing the
+14:0514 minutes, 5 secondsintegrated uh behavior and within that we uh um extra we we viewed we uh if I
+14:1314 minutes, 13 secondsselect that in the containment tree if I drag and drop that uh diagram I can do that. So let me create
+14:2214 minutes, 22 secondsone content diagram. If I drag and drop that state
+14:3014 minutes, 30 secondsmachine diagram into that content diagram, it shows um sorry that's the
+14:3714 minutes, 37 secondsstate machine itself. The diagram itself if I uh drag and drop that state machine it comes like an icon. When you click on
+14:4514 minutes, 45 secondsthe eye, it opens up that view. So here you we bring on all the different views that I want to in uh simulate together.
+14:5414 minutes, 54 secondsAnd we're focusing for example on these three uh systems here. I can get another
+15:0115 minutes, 1 secondum the evaluate status uh for the um CP system. It comes as an icon the diagram.
+15:1015 minutes, 10 secondsWhen I open that I it shows up and I can put all the different diagrams. Go to the higher level element for that. This
+15:1815 minutes, 18 secondsis the CP. I can run that simulation from here and execute the simulation um
+15:2615 minutes, 26 secondsum uh from that uh window. So here ignition on um and then you can see only
+15:3315 minutes, 33 secondsabout uh and simulate elements from that simulation. So the uh uh approach that was took here is using um uh the content
+15:4315 minutes, 43 secondsdiagram and bringing on all the different diagrams for the systems that will be integrated as well as the IBD of
+15:5115 minutes, 51 secondsthat configuration. Now how these are integrated together some ways and I'm going to uh quickly go over them.
+15:5915 minutes, 59 secondsHowever, again the videos that contain the logic and uh the use of uh different uh elements uh are being um provided to
+16:0816 minutes, 8 secondsyou. Uh so here uh um if I go and select that containment tree um that
+16:1816 minutes, 18 secondssystem the CPI has this HMI ready value property and this is um the uh evaluate
+16:2816 minutes, 28 secondsstatus is being called like this and this uh for the CP system are connected by the do evaluate status. this to
+16:3716 minutes, 37 secondsevaluate status calls this to be uh executed and then this is a way of connection is state machine with an activity diagram.
+16:4716 minutes, 47 secondsNow the the system architecture that also has the activity uh contained within through the state machine diagram
+16:5516 minutes, 55 secondshas this HMI ready boolean value property using uh uh a a value
+17:0517 minutes, 5 secondsum opaque action. Uh when you uh uh uh uh using an opaque action you can um
+17:1417 minutes, 14 secondsassign values of h uh of like u um for these value properties. Again um these
+17:2217 minutes, 22 secondsvalue properties uh uh can be given um can be uh assigned um uh here like uh
+17:3117 minutes, 31 secondsthis value from h stat hmi status will uh will assign these values as well. So
+17:3917 minutes, 39 secondsthe uh accept event action will take this value and assign that value to the value properties hmi ready. So that HMI
+17:4917 minutes, 49 secondsis being given to that uh opaque action and um here this is um a readonly uh
+17:5817 minutes, 58 secondsdiagram but if you click on this arrow next to the action you have multiple uh types of action. This is an opaque
+18:0518 minutes, 5 secondsaction. It receives that value HMI okay from this accept event action and uh
+18:1318 minutes, 13 secondsassign it to this HMI ready. HMI ready is the value property owned by the CPM architecture. So you can change values
+18:2118 minutes, 21 secondsof these value properties uh using um opaque actions here. Um this is um uh again an accept
+18:3018 minutes, 30 secondsevent action that takes that value provide it and and assign it to a different value properties.
+18:3818 minutes, 38 secondsThis is an a send signal action and then the send signal action can assign also values to the IBDs. So when that value
+18:4718 minutes, 47 secondsis being assigned this gives it to the IBD using the on port you you you um
+18:5618 minutes, 56 secondsspecify which uh um port will accept this value. So this is a way of
+19:0319 minutes, 3 secondsconnecting um so that that signal that system okay will be uh received on that
+19:1019 minutes, 10 secondsport. So if I go back to this here these are the ports that also are um connected
+19:1819 minutes, 18 secondswith the activity diagrams using the port in the send signal action. So these
+19:2419 minutes, 24 secondssignals you start seeing it fl uh um um traveling and uh between between the different ports using the send signal
+19:3419 minutes, 34 secondsaction on port. So that is also how you connect these activity diagram with the IBD. Details of how to complete that is
+19:4319 minutes, 43 secondsalso provided in the link videos that we um uh we have in our reference uh as well.
+19:5119 minutes, 51 secondsFinally, I want to uh show you that this is um in the state machine. Um you can
+19:5719 minutes, 57 secondsuh set values. So again, if I go and select this in the containment
+20:0320 minutes, 3 secondstree. So these are uh uh uh part properties here. And then the part
+20:1120 minutes, 11 secondsproperty the CMP go to its uh compressor which is a uh component has as well a
+20:2020 minutes, 20 secondsvalue property called uh energy cons. So uh using this language um which is the
+20:2920 minutes, 29 secondsaction language for fml and you can find uh you type that google kit magic that language and there is this list of
+20:3720 minutes, 37 secondsfunctions that you can uh utilize using the opaque action. So this is an opaque action that set the values for the
+20:4520 minutes, 45 secondsdifferent components when that it when it goes into that state. So upon entry um you we're using that opaque action.
+20:5320 minutes, 53 secondsSo if I go to I want to show you how it's um
+20:5920 minutes, 59 secondsum created. So in here you can to create element opaque action opaque behavior
+21:0821 minutes, 8 secondswithin that opaque behavior you uh set this value and you call it upon entry.
+21:1521 minutes, 15 secondsSo you you do that uh uh code inside that uh the opaque behavior and you call
+21:2121 minutes, 21 secondsit multiple times. Uh uh uh this is a way of of encapsulating that code in one
+21:2821 minutes, 28 secondsu u action or function. So again this is called uh action language for FUML and
+21:3721 minutes, 37 secondsagain googling that you can have the list of functionalities that you can complete but you can see at the level of
+21:4421 minutes, 44 secondsthe system you can assign values uh for the different components. So alh set
+21:5121 minutes, 51 secondsvalue this is the name of the part property uh the the part property has a type the type owns between um quotation
+22:0122 minutes, 1 seconduh you put the string name of the value properties owned by that block and then you set the value at the last parameter
+22:0722 minutes, 7 secondshere of that function. So again um in in here you'll do that integrated behavior.
+22:1322 minutes, 13 secondsyou're expected to finish something uh uh um like this uh for the different systems as well.
+22:2322 minutes, 23 secondsSo uh again we run the simulation in the integrated behavior from the higher level elements the VCC configuration and
+22:3022 minutes, 30 secondsyou can execute this uh um um integrated behavior al together just quickly I'm
+22:3722 minutes, 37 secondsgoing to uh run it again and show you how you um simulation run when you click
+22:4422 minutes, 44 secondson run you are at the top level element the the context um if you want to send
+22:5022 minutes, 50 secondssignal if these are not being um sent uh by an activity diagram. The send uh you
+22:5722 minutes, 57 secondsmanually can send that and um we will do the cooling system and we want to do
+23:0423 minutes, 4 secondsstart first thing and you you see how these through the uh this is calling
+23:1023 minutes, 10 secondsperform uh system status. It um um maybe it did that change and um um you look it
+23:1923 minutes, 19 secondsup and see what it did. um to create that uh uh flow of signal between these
+23:2723 minutes, 27 secondsports. So this is the a overview of that integrated system behavior. Um finally
+23:3523 minutes, 35 secondswe we do parametrics at the system level. In here we start creating parametric diagrams. uh that helps us to
+23:4323 minutes, 43 secondsuh uh um evaluate the different uh value properties and make sure that they are
+23:4923 minutes, 49 secondswithin um the um uh requirements. Uh again the value property if it satisfies
+23:5723 minutes, 57 secondsa val a requirement with a um with a text that has less than or equal a certain value the tool automatically
+24:0624 minutes, 6 secondswill alert you if it's not satisfying this value. uh you you create these parametric diagram and you create
+24:1224 minutes, 12 secondsinstance uh um table. So this is an instance table with different instances again showing the different values that
+24:2124 minutes, 21 secondsu um get evaluated using this simulation button. Um again um uh uh you'll you'll
+24:3024 minutes, 30 secondsdo different design of uh experiments making sure that the uh opt uh like what configuration of the VCC s for the
+24:3924 minutes, 39 secondsdifferent value properties um um are within uh uh the requirements to make
+24:4624 minutes, 46 secondssure that the system operate efficiently um um meeting the different uh limits that you set as a uh designer of the
+24:5524 minutes, 55 secondssystem. This is also for the uh for the other system um with uh again you can
+25:0125 minutes, 1 secondadd uh that state for that element um um when you run the simulation. So because
+25:0825 minutes, 8 secondsthis is owns a um uh a state machine diagram. So when you run that simulation
+25:1525 minutes, 15 secondsum you can see the different state that takes place. But here we focus mainly on the value properties running the
+25:2225 minutes, 22 secondsparametric uh diagram. Um if you run them at the same time uh adding that to the integrated behavior uh this will
+25:3225 minutes, 32 secondschange state uh but the value properties will not change based uh uh on that the computational of these values.
+25:4225 minutes, 42 secondsUh so um to summarize we have covered key diagrams in the VCSS uh at the system
+25:5025 minutes, 50 secondslevel for that solution uh from system requirement to structures uh to integrated behavior and parametrics. Uh
+25:5825 minutes, 58 secondswe made we made sure that each diagram plays a crucial role to ensure that the system operates in an expected way. um
+26:0626 minutes, 6 secondsuh uh mapping it back to the different uh requirements and um uh that detailed energy monitoring. Thank you for joining
+26:1526 minutes, 15 secondsand uh through this detailed walk through and in the next video uh we will go over that uh solution uh for the subsystem which is very similar concept.
+26:2626 minutes, 26 secondsSo we will it will be a shorter video for that subsystem and in the implementation requirement it will be a quick uh um one diagram uh because magic
+26:3626 minutes, 36 secondsgrid does not cover the other uh uh element but you can as a modeler you can utilize SML to do that as well. Thank you and we'll see you in the next video.

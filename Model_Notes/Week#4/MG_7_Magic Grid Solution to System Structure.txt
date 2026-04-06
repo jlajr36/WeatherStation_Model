@@ -1,0 +1,150 @@
+0:022 secondsHello and welcome to this module in our um magic root series. And um in the previous modules we focused mainly on
+0:1010 secondsthe uh problem domain uh the white box and the uh uh blackbox analysis um
+0:1818 secondsperspectives and uh how we wanted to understand the system of interest. um
+0:2424 secondsstakeholder needs uh um very uh abstract uh definition of the interactions of
+0:3333 secondsthat system and the um um external environment. And then here we're going to be more into the logical architecture
+0:4141 secondsof our system. Um and in the solution domain um we uh we create at the system
+0:4949 secondslevel the requirements structure behavior parameters um for each subsystem we create also the same things
+0:5757 secondsrequirements structure behavior and parameters and if there's a need to create that for the component level um
+1:041 minute, 4 secondsuh of each subsystem we can create these views. Um now some uh modelers prefer to have the subsystem uh um row in a
+1:131 minute, 13 secondsseparate model and um import that into the um system model and uh do
+1:211 minute, 21 secondstraceability between uh the element at the system level uh to the subsystem um
+1:281 minute, 28 secondsum elements uh using traceability matrices. So the the two models that's being the main one and the uh imported
+1:361 minute, 36 secondsone um um have relationships between them and using uh the the modeled element that is u modeled here in that
+1:451 minute, 45 secondssystem level. Uh why some some people prefer that because some special engineers will be focused or teams of engineers will be focused on the
+1:531 minute, 53 secondsdifferent subsystems. Uh so that's a practice and ensures modularity for each uh subsystem. Um in the solution domain
+2:012 minutes, 1 secondwe bridge the gap between the abstract system definition and the real world implementation. Um uh here we're becoming into the logical and physical
+2:102 minutes, 10 secondsarch before it becomes into the physical architecture. We want to ensure uh that uh um the system is designed designed structured in in a very efficient way.
+2:222 minutes, 22 secondsUm these same uh types of diagrams in system has been used in each layer of abstraction. As you can see here like
+2:322 minutes, 32 secondsgoing down in this magic grid we um uh we become more detailed going up we become more abstract. The concepts the
+2:402 minutes, 40 secondsthe of the language itself is is the same used. However, in this uh uh um uh
+2:482 minutes, 48 secondslevel of abstraction in the logical architecture, we become more detailed.
+2:532 minutes, 53 secondsWe use the simulations uh we uh do trade-off analysis um uh as well. So the
+2:592 minutes, 59 secondsthe the more um uh work of that uh concepts of the language is being employed here more than uh in the uh
+3:093 minutes, 9 secondshigher levels uh where we do multiple simulation analysis um of different subsystems in one view integrating
+3:173 minutes, 17 secondsdifferent um uh models as well in uh system. So in this solution we want to
+3:243 minutes, 24 secondsmake a precise uh logical architecture for that highle design. Um uh we can also provide one or more solutions for
+3:323 minutes, 32 secondsthat problem domain. Um doing trade-off analysis for that optimal solution implementation.
+3:393 minutes, 39 secondsUm so here uh the the solution uh domain here ensures that um our system is not
+3:483 minutes, 48 secondsonly functionally uh correct but um um uh we are we did uh
+3:563 minutes, 56 secondsoptimally it's the best solution uh um by studying the different solution
+4:024 minutes, 2 secondsdomains. uh we can do that within the model based system engineering tool system uh representing different
+4:114 minutes, 11 secondsapproaches uh to meet the uh stakeholder needs and conduct the trade-off analysis
+4:174 minutes, 17 secondsum uh to uh recommend the effective uh solution balancing the different factors
+4:254 minutes, 25 secondsum of that um in uh organizing the solution domain for each solution domain we want to make sure that the The containment
+4:334 minutes, 33 secondstree is um well structured as well is this as the model setup that we talked about. Magic grid have provided that
+4:424 minutes, 42 secondstemplate uh ready for you. Uh however for the different solution domain you want to make sure that you have every
+4:494 minutes, 49 secondssolution domain is well structured um uh in um in that solution domain to um to
+4:574 minutes, 57 secondsunderstand the different uh logical subsystem the components um the clear relationships between these um different
+5:065 minutes, 6 secondssystem parts uh that ensures a modularity maintainability and scalable design for the different uh architecture
+5:145 minutes, 14 secondsbeing uh studied here. Um in um um system requirements is
+5:225 minutes, 22 secondsthis the first um the requirements of that solution uh uh domain is the first
+5:295 minutes, 29 secondsu uh pillar that we want to uh address in our uh um solution domain. Here we
+5:365 minutes, 36 secondsstarted with the problem analysis requirements. uh this is was the uh in the uh uh problem domain. Now we are
+5:445 minutes, 44 secondsderiving a new set of requirements um uh uh and we are even giving it a different
+5:515 minutes, 51 secondsuh element number here uh and um ident different identifier and we have a derived relationship based on this
+5:595 minutes, 59 secondslegend uh from uh the problem analysis requirement to the solution requirements. Um this way we we start
+6:086 minutes, 8 secondsbeing uh more uh detailed in the requirements. Um these requirements will be also traced uh into uh to uh the
+6:176 minutes, 17 secondsdifference uh solution components that we will address. Um so these requirements um become clearly defined
+6:256 minutes, 25 secondsuh um ensuring that all the stakeholder needs u uh are translated into more actionable uh system specifications like
+6:346 minutes, 34 secondsfor example ambient temperature uh um was translated into getting ambient temperature output information display
+6:446 minutes, 44 secondsuh and so in every level we become uh more detailed more accurate in our representation of the system of interest and the stakeholder expectations.
+6:546 minutes, 54 secondsuh uh these system requirements uh the uh RSR the ones here now is being uh
+7:027 minutes, 2 secondstraced to the uh VCCS uh system requirements uh uh the VCSS u uh uh
+7:117 minutes, 11 secondscomponents uh whether part properties um whether there are value properties uh
+7:187 minutes, 18 secondsconstraint properties um or they satisfy these SR. So we want to make sure that
+7:257 minutes, 25 secondsthese um preliminary we uh we visit that traceability between the system requirements and uh uh our system of
+7:347 minutes, 34 secondsinterest uh components um and uh elements. We want to make sure that there's no uh requirements left un uh
+7:427 minutes, 42 secondsunaddressed in our solution uh uh and and all of these fully integrated in the
+7:487 minutes, 48 secondssystem design. Um uh in addition that um this um white box analysis has provided
+7:577 minutes, 57 secondsus with these uh concepts of these systems uh cooling, heating, human machine interacting, processing and
+8:048 minutes, 4 secondsvCCU. Um these are the white box analysis was less detailed um um u model
+8:118 minutes, 11 secondselements around them. um minimal uh number of ports just the concept of how uh these elements and these systems will
+8:208 minutes, 20 secondsinteract with the outside environment uh to understand the problem uh first. So that was the purpose of modeling this.
+8:278 minutes, 27 secondsNow with this in the within the solution architecture these systems uh become more detailed with more more ports more
+8:358 minutes, 35 secondsfeatures more elements uh but want to make sure that uh we have a traceability between these solution system uh
+8:448 minutes, 44 secondsstructure and the white box system structure. So that's an abstract relationship from uh that solution system structure to the white box
+8:528 minutes, 52 secondssolution structure um uh white box system structure.
+8:578 minutes, 57 secondsSo uh um the again the white box purpose was the internal decomposition of the
+9:059 minutes, 5 secondssystem while the solution structure purpose is the structuring the logical uh uh elements before the uh physical
+9:149 minutes, 14 secondsdesign. So the logical elements will carry more uh details about the function
+9:209 minutes, 20 secondsthe component mapping um uh so uh but we want to keep that digital thread among the different level of abstraction. So
+9:299 minutes, 29 secondsthat is one way of creating these elements. So uh also to make sure that nothing has been left unressed in the uh
+9:389 minutes, 38 secondsproblem domain. Uh so again the VCCU we we looked at these uh um IBDs that was less
+9:489 minutes, 48 secondsdetailed versus the VCSS in the solution domain. Uh so here we start with the structuring like these uh um uh system
+9:589 minutes, 58 secondsblocks uh for each of these uh system subsystems here uh uh with more ports.
+10:0510 minutes, 5 secondsUm um the interface blocks also have more elements. um uh and flow properties
+10:1210 minutes, 12 secondsthat are more detailed. Um uh also like um uh the signals have uh attributes
+10:1910 minutes, 19 secondsthat you can also uh uh see uh being simulated uh with that integrated behavior as well. So here we become more
+10:2810 minutes, 28 secondsdetailed u uh uh in that uh solution structure. Uh we want to make sure that
+10:3610 minutes, 36 secondsum uh we define things uh at this level um uh at the logical architecture uh
+10:4410 minutes, 44 secondsensuring that everything is being addressed before uh um from that conceptual design to implementation. Um
+10:5310 minutes, 53 secondswe want to make sure that it's a smooth tra uh uh transition. we want to reduce the errors uh from uh transitioning from
+11:0211 minutes, 2 secondsthe logical architecture uh to the uh uh implementation
+11:0811 minutes, 8 secondsphase. So the VCSS uh structure has been uh addressed in this uh diagram in in
+11:1611 minutes, 16 secondshere in that uh uh system structure. Uh we are uh creating even um um um we we
+11:2511 minutes, 25 secondsdid all the work of that uh structure for that VCSS block. um uh the
+11:3111 minutes, 31 secondsconfiguration uh uh element bring uh that um how the subsystem physically
+11:3911 minutes, 39 secondsstructured implemented. Um um so that layer is brought uh again uh uh in that
+11:4611 minutes, 46 secondsimplementation in the sample model that uh um um I pointed to to it the uh
+11:5411 minutes, 54 secondswithin your installation. these VCCS configuration, the architecture elements um uh of these systems and the component
+12:0312 minutes, 3 secondslevel is being modeled in a separate model and imported into uh uh this main magic grid model. Now this inheritance
+12:1212 minutes, 12 secondsrelationship um what's with the work that you did here for the VCSS is being
+12:1912 minutes, 19 secondsinherited all of it in into that VCSS configuration that uh that is uh more detailed uh as well um for each system
+12:2912 minutes, 29 secondshave its own architecture um and uh that well definfined system architecture in this case inheriting uh
+12:3712 minutes, 37 secondsthe work you did in the solution domain um and um uh the composition of all of this subsystem architecture um and make
+12:4612 minutes, 46 secondssure that these are all well properly structured for implementation and um that keeps uh every system modular
+12:5512 minutes, 55 secondsscalable scalable as well like if I'm interested in improving some elements in the cooling structure this uh uh uh
+13:0413 minutes, 4 secondssubsystem is being in a separate model that I can work on and um um um update
+13:1113 minutes, 11 secondsthe traceability between the elements of this total subsystem configuration and my cooling system
+13:1813 minutes, 18 secondsarchitecture. So again um same kind of uh uh work in terms of the mechanics of
+13:2613 minutes, 26 secondsthe language and the tool. Uh however what's difference here it becomes more
+13:3113 minutes, 31 secondsdetailed u uh more um um uh more um um
+13:3813 minutes, 38 secondssimulatable more allowing you to uh examine different um uh again uh
+13:4413 minutes, 44 secondstradeoff solutions to suggest the best solution uh within uh uh the uh system
+13:5213 minutes, 52 secondsbehavior. We also can do that. Uh we want to make sure that we create a um um
+13:5913 minutes, 59 secondsa state machine a activity diagram to translate uh uh and understand the system behavior which is very crucial uh
+14:0814 minutes, 8 secondsto ensure that the system functions that we created in the problem domain uh uh uh is being addressed and um will be
+14:1614 minutes, 16 secondsperforming as expected in uh different operational scenarios. We want to make sure that these uh we model the
+14:2314 minutes, 23 secondsinteractions between the components um and the uh subsystem uh to to allow us
+14:3014 minutes, 30 secondsto uh uh do simulation and understand um how is um uh these uh total
+14:3814 minutes, 38 secondsconfiguration of this of the system is um um uh is being integrated uh between
+14:4614 minutes, 46 secondsuh again the component subsystem to align the different operational architecture. Uh in addition we uh in
+14:5514 minutes, 55 secondsthe solution parameters uh we add now at the uh VCSS and the different system we add measurements in the solution domain.
+15:0515 minutes, 5 secondsWe create uh parametric diagram we assess these value properties uh using
+15:1115 minutes, 11 secondsum um um uh instance tables. we run these simulations and understand um how
+15:1815 minutes, 18 secondsthese different ises is being um um analyzed uh for the different configurations
+15:2615 minutes, 26 secondsum of these values. So this is also part of the uh solution in the system parameters.
+15:3315 minutes, 33 secondsum we go in and revisit that traceability between uh uh the work that has been done and if there's additional
+15:4015 minutes, 40 secondstrace satisfy relationship to these system requirements uh these matrices um needs that revisit to make sure that all
+15:4915 minutes, 49 secondsof these uh requirements uh with the additional elements that you also add into um your system uh architecture
+15:5715 minutes, 57 secondsmodel um uh uh is always intact and uh keeping updating these
+16:0316 minutes, 3 secondssatisfy um relationship between the components of this uh system architecture and um the requirements of
+16:1316 minutes, 13 secondsyour uh systems. So um we talked about uh that
+16:1916 minutes, 19 secondsmagic grit at the system level. uh we uh we are now mainly focusing on uh on that
+16:2716 minutes, 27 secondshigher level magic grid at the system level for each subsystem the cooling the HMI the component level you can create
+16:3516 minutes, 35 secondsas an um an its own magic grid um for each element. So you create that at the subsystem level at the component level.
+16:4616 minutes, 46 secondsYou import that total model into that higher level system level and you utilize um um um these uh elements by
+16:5516 minutes, 55 secondstraceability matrices among them. Uh creating that relationship to create that uh digital thread among the
+17:0317 minutes, 3 secondselements keeping everything modular uh as well. Uh so um and that purpose also
+17:1117 minutes, 11 secondsbecause different engineers will be working at different logical architecture for the various subsystems.
+17:1717 minutes, 17 secondsUh this process begins into the detailing of the uh each subsystem. Um so we want to make sure that that
+17:2417 minutes, 24 secondssubsystem its analysis is being performed by that team is being um uh managed by them. So you create that
+17:3217 minutes, 32 secondsmagic grid for it. Um uh importing it to the overall uh um um system model. Um
+17:4117 minutes, 41 secondsbut you can you and your team should um have your own uh way of how you manage that and what are the different
+17:4917 minutes, 49 secondsrelationship that you will create to make sure that um the the um uh these models uh have connecting points between
+17:5817 minutes, 58 secondsthem. the traceable um at the different level of abstraction as well in the um uh this is an example of
+18:0618 minutes, 6 secondsthe cooling system structure uh which is in a separate u model in SML um um uh so
+18:1418 minutes, 14 secondsthat's that's an example of uh or a diagram or a view for that uh uh
+18:2318 minutes, 23 secondssubsystem architecture uh um which um has been defined designed separately by the cooling uh system engineering team.
+18:3218 minutes, 32 secondsUh so from that point this point um this work was done in a separate model. The cooling system representation that we
+18:4118 minutes, 41 secondscreated in the total model inherits all of that work here and uh that keeps that traceability between them. Um um and
+18:5018 minutes, 50 secondseven the ports this uh uh components level inherits here and then uh the traceability takes place from uh from
+18:5818 minutes, 58 secondsthat point. Um so uh you want to make sure that this style guide of modeling is being well defined between your um
+19:0619 minutes, 6 secondsengineering teams. Um having these subsystems self-contained and interact um um uh in a well- definfined eleed
+19:1619 minutes, 16 secondsmodel makes it much easier with the complexity of the systems that you will address. Uh this is uh where we will
+19:2519 minutes, 25 secondsstop for this week. uh for the uh solution domain. Um in the grid uh we we
+19:3219 minutes, 32 secondsare stopping at the different subsystem structure um um addressing these subsystems only the structure. Then in
+19:3919 minutes, 39 secondsthe next week we'll talk about the integrated behavior uh between these subsystem um uh architectures that's
+19:4719 minutes, 47 secondsbeing um addressed using uh state machines activity diagrams um in a um in
+19:5419 minutes, 54 secondsa context model uh to run the simulation and and understand the behavior of these subsystems. Thank you for listening and we'll see you in the next video.
